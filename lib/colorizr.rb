@@ -2,14 +2,14 @@ require 'colorize'
 
 module Colorize::ClassMethods
 
-	def color_codes
+  def color_codes
       {
         :black   => 0,
         :red     => 1,
         :green   => 2,
         :yellow  => 3,
         :blue    => 4,
-        :pink 	=> 5,
+        :pink   => 5,
         :white   => 7,
         :light_blue     => 64,
         :light_grey     => 60, 
@@ -19,8 +19,8 @@ module Colorize::ClassMethods
 end
 
 class String
-	color_methods
-  	modes_methods
+  color_methods
+    modes_methods
 end
 
 
@@ -33,4 +33,3 @@ puts "yellow".yellow
 puts "green".green
 puts "red".red
 puts "black".black
-
