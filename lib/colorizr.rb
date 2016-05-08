@@ -1,7 +1,6 @@
 require 'colorize'
 
 module Colorize::ClassMethods
-
   def color_codes
       {
         :black   => 0,
@@ -16,20 +15,18 @@ module Colorize::ClassMethods
         :default => 9
       }
     end
+  def colors
+      color_codes.keys.select{|color| color != :default}
+  end
+  
+  def sample_colors
+      colors.each do |color|
+        sample_text = "#{color}"
+        puts "This is #{sample_text.colorize(:color => color)}" 
+      end
+  end
 end
 
 class String
   color_methods
-    modes_methods
 end
-
-
-puts "light_grey".light_grey
-puts "light_blue".light_blue
-puts "white".white
-puts "pink".pink
-puts "blue".blue
-puts "yellow".yellow
-puts "green".green
-puts "red".red
-puts "black".black
