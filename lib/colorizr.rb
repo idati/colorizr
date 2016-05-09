@@ -39,5 +39,3 @@ end
 class String
   color_methods
 end
-
-puts "test".white
