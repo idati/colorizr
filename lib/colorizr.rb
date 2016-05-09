@@ -9,7 +9,7 @@ module Colorize::ClassMethods
         :yellow  => 3,
         :blue    => 4,
         :pink   => 5,
-        :white   => 7,
+        :white   => 67,
         :light_blue     => 64,
         :light_grey     => 60, 
         :default => 9
@@ -17,6 +17,15 @@ module Colorize::ClassMethods
     end
   def colors
       color_codes.keys.select{|color| color != :default}
+  end
+  
+  def color_methods
+      colors.each do |key|
+
+        define_method key do
+          colorize(:color => key)
+        end
+      end
   end
   
   def sample_colors
@@ -30,3 +39,5 @@ end
 class String
   color_methods
 end
+
+puts "test".white
