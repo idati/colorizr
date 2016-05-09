@@ -15,16 +15,19 @@
   First of all to see which colors are available use the command
 <table>
   <tr><td>p String.colors</td></tr>
+  <tr><td><img src="color.png"></td></tr>
 </table>
 
 The command "String.sample_colors" shows you examples of the output.
 <table>
   <tr><td>String.sample_colors</td></tr>
+  <tr><td><img src="sample.png"></td></tr>
 </table>
 
 Finally the example String "Hello World" should be drawn in red
 <table>
   <tr><td>"Hello World".red</td></tr>
+  <tr><td><img src="hello.png"></td></tr>
 </table>
 
 ##Installation instructions
