@@ -1,0 +1,15 @@
+How does your gem take advantage of Ruby’s metaprogramming capabilities?
+by writing  
+define_method key do
+  colorize(:color => key)
+end
+I created 10 new function (each for one color)
+
+How long did you spend working on this project?
+5 hours
+
+What was the most rewarding challenge you conquered?
+to understand metaprogramming, the theoretical part, the coding was fun.
+
+Where do you still have room to grow?
+to get a big picture of the most functionalities.
