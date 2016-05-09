@@ -30,3 +30,6 @@ Finally the example String "Hello World" should be drawn in red
 ##Installation instructions
 using <a href="https://classroom.udacity.com/nanodegrees/nd010/parts/010864320/modules/57254785510/lessons/400000001004/concepts/20000000358">this</a>default settings.
 
+<table>
+  <tr><td>gem install colorizr-0.0.3.gem</td></tr>
+</table>
